@@ -3,6 +3,9 @@
 
 
 <h2>Description</h2>
+
+<p>A Virtual Machine (VM) is a software-based computer that runs an operating system and applications just like a physical computer, but it exists entirely in a virtualized environment.</p>
+
 <p>Steps to create the Virtual Server:</p>
 1. Log-in to your computer, search for Hyper-V Manager, and open it.<br>
 2. On the Actions, select the Virtual Switch Manager.<br>
@@ -28,23 +31,23 @@
 22. To load the OS, right-click on your Virtual Machine and select Connect.<br>
 23. Your Virtual Machine window opens up. Select Start and immediately press any key to install your .ISO file. Note: if you didn’t, just select the “Reset” icon and click any key.<br>
 24. At the Microsoft Server Operating System Setup, select Next with the default preferences.<br>
-Click Install now; highlight the Windows Server 2022 Standard Evaluation (Desktop Experience) and select Next. Note: the option without Desktop are not for GUIs, just command lines).<br>
-25. Accept the Terms and Next.<br>
-26. Select Custom: Install Microsoft Server Operating System only (advanced).<br>
-27. Ensure Drive 0 Unallocated Space is selected and select Next. Take a BREAK!!!<br>
-28. The installation will take approximately 15 mins.<br>
-29. Customize settings will ask you to create a password. Note: for this Lab, I am selecting Password1!. Select Finish.<br>
-30. When prompt, click Connect (for Lab purposes, I am keeping the default Display configuration). Your username is Administrator with your selected password.<br>
-31. Minimize Server Manager.<br>
-32. On the search bar, type CMD.<br>
-33. On the Command Prompt, ping google.com. Note: If pings are successful, let’s identify your Network Adapters.<br>
-34. On the search bar, type Network Connections. The Network Connections window should have two adapters. Right click the first one and select Status. We are looking at the “IPv4 Connectivity:” line. On the one with Internet access, close the status, right click and rename it to ExternalNetwork. The adapter with “No Internet access”, close the status and rename as InternalNetwork.<br>
-35. Right click on the InternalNetwork, select Properties, then double-click on Internet Protocol Version 4 (TCP/IPv4).<br>
-36. When the new window opens, select Use the following IP address: 172.16.0.1, Subnet mask: 255.255.255.0, Default gateway: leave it empty.<br>
-37. Under the “Use the following DNS server:”, under “Preferred DNS server:” type 172.16.0.1 and OK twice.<br>
-38. Next, rename your PC. Right-click on the Start button and select System.<br>
-39. At the Settings window, select “Rename this PC”, rename it to DC, and click Next.<br>
-40. Click “Restart Now” and Continue. Your VM will restart.
+25. Click Install now; highlight the Windows Server 2022 Standard Evaluation (Desktop Experience) and select Next. Note: the option without Desktop are not for GUIs, just command lines).<br>
+26. Accept the Terms and Next.<br>
+27. Select Custom: Install Microsoft Server Operating System only (advanced).<br>
+28. Ensure Drive 0 Unallocated Space is selected and select Next. Take a BREAK!!!<br>
+29. The installation will take approximately 15 mins.<br>
+30. Customize settings will ask you to create a password. Note: for this Lab, I am selecting Password1!. Select Finish.<br>
+31. When prompt, click Connect (for Lab purposes, I am keeping the default Display configuration). Your username is Administrator with your selected password.<br>
+32. Minimize Server Manager.<br>
+33. On the search bar, type CMD.<br>
+34. On the Command Prompt, ping google.com. Note: If pings are successful, let’s identify your Network Adapters.<br>
+35. On the search bar, type Network Connections. The Network Connections window should have two adapters. Right click the first one and select Status. We are looking at the “IPv4 Connectivity:” line. On the one with Internet access, close the status, right click and rename it to ExternalNetwork. The adapter with “No Internet access”, close the status and rename as InternalNetwork.<br>
+36. Right click on the InternalNetwork, select Properties, then double-click on Internet Protocol Version 4 (TCP/IPv4).<br>
+37. When the new window opens, select Use the following IP address: 172.16.0.1, Subnet mask: 255.255.255.0, Default gateway: leave it empty.<br>
+38. Under the “Use the following DNS server:”, under “Preferred DNS server:” type 172.16.0.1 and OK twice.<br>
+39. Next, rename your PC. Right-click on the Start button and select System.<br>
+40. At the Settings window, select “Rename this PC”, rename it to DC, and click Next.<br>
+41. Click “Restart Now” and Continue. Your VM will restart.
 
 
 <br />
